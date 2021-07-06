@@ -39,7 +39,7 @@ export default {
                 class: 'todo-list'
             }
         }, [
-            this.list.map((item, index) => {
+            this.list.map((item) => {
                 return h('li', {
                     key: item.id,
                     class: {
@@ -92,13 +92,13 @@ export default {
                     },
                     on: {
                         enter: (val) => {
-                            this.doneEdit(val, item, index)
+                            this.doneEdit(val, item)
                         },
                         blur: (val) => {
-                            this.doneEdit(val, item, index)
+                            this.doneEdit(val, item)
                         },
                         esc: e => {
-                            this.backEdit(e, item, index)
+                            this.backEdit(e, item)
                         }
                     }
                 })])

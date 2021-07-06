@@ -12,7 +12,7 @@ export default {
                 h('a', {
                     attrs: {
                         href: 'http://sindresorhus.com',
-                        target:'_blank'
+                        target: '_blank'
                     }
                 }, 'Sindre Sorhus')
             ]),
@@ -20,16 +20,16 @@ export default {
                 'Created by ',
                 h('a', {
                     attrs: {
-                        href: 'http://todomvc.com',
-                        target:'_blank'
+                        href: 'https://github.com/shibin-cli',
+                        target: '_blank'
                     }
                 }, 'Shibin You')
-            ]),h('p', [
+            ]), h('p', [
                 'Part of ',
                 h('a', {
                     attrs: {
                         href: 'http://todomvc.com',
-                        target:'_blank'
+                        target: '_blank'
                     }
                 }, 'TodoMVC')
             ])
