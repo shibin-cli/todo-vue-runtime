@@ -174,7 +174,8 @@ export default {
 function hashListener(app) {
     window.addEventListener('hashchange', () => {
         if (window.location.hash) {
-            app.visibility = window.location.hash.slice(1) || 'all'
+            const visibility = window.location.hash.slice(1) || 'all'
+            app.visibility = filters[visibility] ? visibility : 'all'
         }
     })
 }
